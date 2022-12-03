@@ -4,7 +4,7 @@
 def calc_score():
     score = 0
 
-    for line in open(r"C:\Users\micah\PycharmProjects\Practice_Projects\advent_day_2\rps.txt"):
+    for line in open(r"/advent_of_code/advent_day_2/day_2.txt"):
         line = line.split()
 
         opponent = line[0]
@@ -74,7 +74,7 @@ def calc_score_from_result():
     draw = 3
     win = 6
 
-    for line in open(r"C:\Users\micah\PycharmProjects\Practice_Projects\advent_day_2\rps.txt"):
+    for line in open(r"/advent_of_code/advent_day_2/day_2.txt"):
         line = line.split()
 
         opponent = line[0]
