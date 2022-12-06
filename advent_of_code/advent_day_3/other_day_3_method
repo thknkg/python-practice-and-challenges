@@ -1,0 +1,33 @@
+
+"""alternative method
+
+groups = []
+badge_priority_sum = 0
+for line in lines:
+    if count == 3:
+        groups = []
+        count = 0
+
+    groups.append(line)
+
+    count += 1
+
+    #### using normal loop ####
+    # loop through like the other version
+    for char in groups[0]:
+        if char in groups[1] and char in groups[2]:
+            # convert to requested values
+            if 97 <= ord(char) <= 122:
+                lower_val = ord(char) - 96
+                badge_priority_sum += lower_val
+                print(char, badge_priority_sum)
+
+            elif 65 <= ord(char) <= 90:
+                upper_val = ord(char) - 38
+                badge_priority_sum += upper_val
+                print(char, badge_priority_sum)
+            break
+
+print(badge_priority_sum)
+print(badge_priority_sum)
+"""
